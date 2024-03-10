@@ -1,0 +1,12 @@
+---
+const res = await fetch("https://swapi.py4e.com/api/people", {
+  method: "GET",
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
+
+const data = JSON.stringify(await res.json());
+
+console.log(data);
+---
