@@ -1,4 +1,5 @@
 ---
+import { type APIStarWars } from "../types/api";
 const res = await fetch("https://swapi.py4e.com/api/people", {
   method: "GET",
   headers: {
@@ -6,7 +7,5 @@ const res = await fetch("https://swapi.py4e.com/api/people", {
   },
 });
 
-const data = JSON.stringify(await res.json());
-
-console.log(data);
+const { results } = (await res.json()) as APIStarWars;
 ---
