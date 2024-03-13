@@ -1,1 +1,37 @@
-interface Props {}
+---
+interface Props {
+  name: string;
+  height: string;
+  mass: string;
+  hair_color: string;
+  skin_color: string;
+  eye_color: string;
+  birth_year: string;
+}
+const { name, birth_year, height, mass, hair_color, eye_color } = Astro.props;
+---
+
+<a href={`/launch/${name}`}>
+  <picture>
+    <img src="" alt={`Personaje ${name}`} />
+  </picture>
+  <header class="container">
+    <h2 class="name">
+      <span>Personaje</span>{name}
+    </h2>
+    <p>
+      <samp>Altura</samp>
+      {height}
+      <samp>Masa</samp>
+      {mass}
+      <samp>Color de pelo</samp>
+      {hair_color}
+      <samp>Color de ojos</samp>
+      {eye_color}
+      <samp>Cumpleaños</samp>
+      {birth_year}
+    </p>
+  </header>
+</a>
+
+<style></style>

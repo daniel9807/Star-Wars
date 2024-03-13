@@ -1,0 +1,45 @@
+[
+    {
+        "name" : "Luke Skywalker",
+        "imagen" : "https://img.europapress.es/fotoweb/fotonoticia_20150620132813_800.jpg"
+    },
+    {
+        "name" : "C-3PO",
+        "imagen" : "https://www.rollingstone.com/wp-content/uploads/2019/12/EP9-FF-001686W.jpg?w=1581&h=1054&crop=1"
+    },
+    {
+        "name" : "R2-D2",
+        "imagen" : "https://static1.srcdn.com/wordpress/wp-content/uploads/2016/08/R2-D2-in-Star-Wars-A-New-Hope.jpg"
+    },
+    {
+        "name" : "Darth Vader",
+        "imagen" : "https://ew.com/thmb/GMCDFEhTH2t2JzS1wW-BkRwa-c4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/darth-vader-1-b466bcb1c9de4e249c7dfe90bde483b4.jpg"
+    },
+    {
+        "name" : "Leia Organa",
+        "imagen" : "https://www.latercera.com/resizer/ykqZxMDuht_6Py4wDerXAHCX9GY=/900x600/smart/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/LT6YA7CRTFDWLCEFUY6S7CJOUA.jpg"
+    },
+    {
+        "name" : "Owen Lars",
+        "imagen" : "https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/05/Uncle-Owen-Lars.jpg"
+    },
+    {
+        "name" : "Beru Whitesun lars",
+        "imagen" : "https://static.wikia.nocookie.net/alternativetimelinestarwars/images/8/8c/Beru_Lars.jpg/revision/latest/scale-to-width-down/220?cb=20171228103728"
+    },
+    {
+        "name" : "R5-D4",
+        "imagen" : "https://www.looper.com/img/gallery/r5-d4-the-complete-history-of-din-djarins-ally-in-the-mandalorian-explained/intro-1678514086.jpg"
+    },
+    {
+        "name" : "Biggs Darklighter",
+        "imagen" : "https://lumiere-a.akamaihd.net/v1/images/image_606ff7f7.jpeg?region=0%2C0%2C1560%2C878"
+    },
+    {
+        "name" : "Obi-Wan Kenobi",
+        "imagen" : "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilmI0YfgTIEA43CzqPGXfsFEpcheetRfJurl8WH0I0MVOasPHivqaqivIFWGFNE0ecaZbCxQGCULnwSHNh944Oa_T8g3PIZPqaHDjdRVxgvyYUVHEUUWssmSZ5h2u8hAjo7DzRQfQStMfq/s640/kenobi.jpg"
+    }
+
+
+]
+

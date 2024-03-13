@@ -1,11 +1,28 @@
 ---
 import { type APIStarWars } from "../types/api";
-const res = await fetch("https://swapi.py4e.com/api/people", {
+import CardLaunch from "./CardLaunch.astro";
+const people = await fetch("https://swapi.py4e.com/api/people", {
   method: "GET",
   headers: {
     "Content-Type": "application/json",
   },
 });
 
-const { results } = (await res.json()) as APIStarWars;
+const { results: launches } = (await people.json()) as APIStarWars;
 ---
+
+<div>
+  {
+    launches.map((launche) => (
+      <CardLaunch
+        name={launche.name}
+        height={launche.height}
+        mass={launche.mass}
+        hair_color={launche.hair_color}
+        skin_color={launche.skin_color}
+        eye_color={launche.eye_color}
+        birth_year={launche.birth_year}
+      />
+    ))
+  }
+</div>
