@@ -20,9 +20,7 @@ const personImg = ImgPerson.map((person) => ({
 
 const encontrado = personImg.find((person) => person.nombre == name);
 
-// if (encontrado) {
-//   console.log(encontrado.img);
-// }
+const olo = hair_color ? "No tiene" : "No tiene";
 ---
 
 <a href=`/launch/${name}` class="text-gradient card">
@@ -32,19 +30,19 @@ const encontrado = personImg.find((person) => person.nombre == name);
       src={encontrado.img}
       alt={`Personaje ${name}`}
       height="200"
-      width="300"
+      width="280"
       class="img"
     />
   </picture>
   <header>
     <ul class="ul">
-      <li>Altura {height}</li>
-      <li>Masa {mass}</li>
-      <li>Color de pelo {hair_color}</li>
-      <li>Color de piel {skin_color}</li>
-      <li>Color de ojos {eye_color}</li>
+      <li><spam>Altura</spam> {height}</li>
+      <li><spam>Masa</spam> {mass}</li>
+      <li><spam>Color de pelo</spam><br />{hair_color}</li>
+      <li><spam>Color de piel</spam><br />{skin_color}</li>
+      <li><spam>Color de ojos</spam><br />{eye_color}</li>
+      <li><spam>Cumple años</spam><br />{birth_year}</li>
     </ul>
-    <p>Cumple años {birth_year} 🎈</p>
   </header>
 </a>
 
@@ -62,14 +60,17 @@ const encontrado = personImg.find((person) => person.nombre == name);
     );
   }
   .card {
-    border: 10px solid var(--color-one);
+    height: 420px;
+    width: 290px;
     border-radius: 10px;
     text-decoration: none;
-    background-color: var(--color-one);
+    transition: all ease-out 0.5s;
     color: #7286d3;
+    border: 10px solid var(--color-one);
   }
   .card:hover {
     box-shadow: 0px 0px 30px #a9bdf1;
+    background-color: #e4e4f7;
   }
   .title {
     text-align: center;
@@ -78,10 +79,27 @@ const encontrado = personImg.find((person) => person.nombre == name);
     padding-bottom: 5px;
     border-bottom: 2px inset #7286d3;
   }
+
+  picture {
+    display: flex;
+    justify-content: center;
+  }
   .img {
     border-radius: 10px;
   }
   .ul {
     list-style: none;
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 15px 15px;
+  }
+  spam {
+    font-size: 13px;
+    font-weight: 700;
+  }
+  li {
+    font-size: 13px;
   }
 </style>
