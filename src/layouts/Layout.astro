@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro";
+
 interface Props {
   title: string;
 }
@@ -22,7 +23,17 @@ const { title } = Astro.props;
     <main>
       <slot />
     </main>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
   </body>
+  <script>
+    document.addEventListener("mousemove", function (e) {
+      var cursor = document.querySelector(".cursor");
+      var cursor2 = document.querySelector(".cursor2");
+      cursor.style.cssText = cursor2.style.cssText =
+        "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+  </script>
 </html>
 <style is:global>
   * {
@@ -56,5 +67,27 @@ const { title } = Astro.props;
       Bitstream Vera Sans Mono,
       Courier New,
       monospace;
+  }
+
+  .cursor {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+  }
+  .cursor2 {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url("/WhhDeathstar.svg");
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
   }
 </style>

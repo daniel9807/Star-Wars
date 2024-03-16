@@ -19,8 +19,6 @@ const personImg = ImgPerson.map((person) => ({
 }));
 
 const encontrado = personImg.find((person) => person.nombre == name);
-
-const olo = hair_color ? "No tiene" : "No tiene";
 ---
 
 <a href=`/launch/${name}` class="text-gradient card">
@@ -67,10 +65,11 @@ const olo = hair_color ? "No tiene" : "No tiene";
     transition: all ease-out 0.5s;
     color: #7286d3;
     border: 10px solid var(--color-one);
+    /* background-color: #e4e4f7; */
   }
   .card:hover {
     box-shadow: 0px 0px 30px #a9bdf1;
-    background-color: #e4e4f7;
+    background-color: var(--color-one);
   }
   .title {
     text-align: center;
