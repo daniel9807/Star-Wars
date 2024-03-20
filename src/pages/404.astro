@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="404 Not Found">
+  <div class="container">
+    <h1 class="title">Esta página no existe...</h1>
+    <img
+      src="/404.svg"
+      alt="404"
+      class="pinture"
+      height="600px"
+      width="600px"
+    />
+  </div>
+</Layout>
+
+<style>
+  .container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    font-weight: 700;
+    color: #8b9cdf;
+  }
+  .pinture {
+    filter: drop-shadow(0 0 10px rgb(7, 6, 6));
+  }
+</style>
