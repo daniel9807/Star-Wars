@@ -1,14 +1,9 @@
 ---
-import { type APIStarWars } from "../types/api";
 import CardLaunch from "./CardLaunch.astro";
-const people = await fetch("https://swapi.py4e.com/api/people", {
-  method: "GET",
-  headers: {
-    "Content-Type": "application/json",
-  },
-});
 
-const { results: launches } = (await people.json()) as APIStarWars;
+import { getStarWars } from "../types/starwars.ts";
+
+const launches = await getStarWars();
 ---
 
 <div class="container">

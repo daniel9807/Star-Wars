@@ -1,0 +1,12 @@
+---
+import type { GetStaticPaths } from "astro";
+import CardLaunch from "../../components/CardLaunch.astro";
+
+const { url } = Astro.params;
+
+const personaje = await CardLaunch({ url });
+
+export function getStaticPaths() {
+  return [{ params: { url: "https://swapi.py4e.com/api/people/1/" } }];
+}
+---
